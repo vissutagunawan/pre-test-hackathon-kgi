@@ -1,4 +1,4 @@
 # Hackathon : Empowering Energy through Artificial Intelligence
 
-![Images](./assets/hackathon-geoscience.png)
+![Images](./Assets/hackathon-geoscience.png)
 
