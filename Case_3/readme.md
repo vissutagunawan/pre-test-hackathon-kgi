@@ -1,71 +1,47 @@
-The dataset can be downloaded here : https://nawadarsana-my.sharepoint.com/:x:/g/personal/aminah_nurrahmawati_nawatech_co/EThiFCHctwNAksx7zn0EKH0BAPdsOT9a-cqSWhBgcpXDtg?e=5B79lE
+# Silica Quality Prediction in Mining Process
+## 🧠 Overview
+This project aims to predict the percentage of silica in the final product of an iron ore flotation process. Silica is an undesirable impurity that directly affects the quality of the ore, and accurate prediction enables better process control and product optimization.
 
-## Objectives
+By leveraging operational parameters from the flotation process, we apply machine learning models to forecast silica levels in real time, helping engineers take proactive decisions to maintain high product quality.
 
-Predict the % of Silica as the Quality in Mining Process
+## 🚀 Use Case
+In the iron ore mining industry, maintaining low silica content is essential to meet product specifications and ensure downstream processing efficiency. This project uses data from various flotation process parameters to predict the % of Silica in the output.
 
+Our workflow includes:
+- Data Collection: Downloading and understanding the dataset from the provided source.
+- Data Cleaning: Handling missing values and correcting inconsistent entries.
+- Feature Engineering: Creating additional features from timestamp or derived ratios.
+- Model Training: Testing and tuning models like Random Forest, XGBoost, and Gradient Boosting.
+- Evaluation: Using MAE, RMSE, and R² to evaluate prediction accuracy.
+- Visualization: Plotting predicted vs. actual silica percentages for validation.
 
-## 📊 Dataset Description
+Predicted silica values can assist process engineers in identifying early warning signs and making real-time adjustments to reagent flow rates or pulp conditions.
 
-This dataset contains operational parameters from an iron ore flotation process. Below are the descriptions for each feature:
+## 📊 Dataset
+The dataset can be downloaded here:
+[Download Dataset](https://nawadarsana-my.sharepoint.com/:x:/g/personal/aminah_nurrahmawati_nawatech_co/EThiFCHctwNAksx7zn0EKH0BAPdsOT9a-cqSWhBgcpXDtg?e=5B79lE)
 
-### 📅 Date and Timestamp
-- **Description**: Indicates the specific date and time of each observation or measurement.
+It contains operational data collected from an iron ore flotation process.
 
----
+### Key Columns:
 
-### 🔩 % Iron Feed
-- **Description**: The percentage of iron content in the iron ore that is fed into the flotation cells.
-- **Importance**: Higher % Iron Feed means better ore quality entering the process.
+| Feature                           | Description                                                   |
+|-----------------------------------|---------------------------------------------------------------|
+| `Date and Timestamp`              | Date and time of the observation                              |
+| `% Iron Feed`                     | Iron content in the feed ore; higher is better                |
+| `% Silica Feed`                   | Silica content in the feed ore; lower is better               |
+| `Starch Flow`                     | Depressant reagent flow rate (m³/h)                           |
+| `Amina Flow`                      | Collector reagent flow rate (m³/h)                            |
+| `Ore Pulp Flow`                   | Flow rate of ore pulp (t/h)                                   |
+| `Ore Pulp pH`                     | pH level of ore pulp (0–14 scale)                             |
+| `Ore Pulp Density`                | Density of the pulp (kg/cm³); typical range: 1–3              |
+| `Flotation Column 01 Air Flow`    | Air flow into the first flotation column (Nm³/h)              |
+| `Flotation Column 02 Air Flow`    | Air flow into the second flotation column (Nm³/h)             |
+| `% Silica (Target)`               | Percentage of silica in the final output (target variable)    |
 
----
-
-### 🧪 % Silica Feed
-- **Description**: The percentage of silica (impurity) in the iron ore that is fed into the flotation cells.
-- **Importance**: Silica is an undesirable impurity that must be reduced; lower values are better.
-
----
-
-### 🌽 Starch Flow
-- **Description**: The flow rate of starch (used as a depressant reagent) in the flotation process.
-- **Unit**: m³/h (cubic meters per hour)
-
----
-
-### 🧴 Amina Flow
-- **Description**: The flow rate of amina (used as a collector reagent) in the flotation process.
-- **Unit**: m³/h (cubic meters per hour)
-
----
-
-### 💧 Ore Pulp Flow
-- **Description**: The total flow of the iron ore pulp into the flotation system.
-- **Unit**: t/h (tons per hour)
-
----
-
-### 🧪 Ore Pulp pH
-- **Description**: The acidity/alkalinity level of the ore pulp.
-- **Scale**: 0 (acidic) to 14 (alkaline); neutral = 7
-
----
-
-### ⚖️ Ore Pulp Density
-- **Description**: The density of the ore pulp.
-- **Unit**: kg/cm³  
-- **Typical Range**: 1 to 3 kg/cm³
-
----
-
-### 🌬️ Flotation Column 01 Air Flow
-- **Description**: The airflow entering the first flotation column.
-- **Unit**: Nm³/h (normal cubic meters per hour)
-
----
-
-### 🌬️ Flotation Column 02 Air Flow
-- **Description**: The airflow entering the second flotation column.
-- **Unit**: Nm³/h (normal cubic meters per hour)
-
-
-
+## 🎯 Outcome
+The machine learning model provides:
+- Reliable prediction of silica content
+- Insights into parameter influence on product quality
+- Data-driven support for process optimization
+- Improved compliance with product specs
