@@ -7,8 +7,6 @@ This event is your gateway to exploring how artificial intelligence can revoluti
 
 This guide is crafted to help you navigate the process with clarity and confidence. Follow each step to build impactful AI solutions that support smarter energy decisions.
 
-🕒 Estimated Time to Complete: 2.5 to 4 hours
-
 We’ve structured each activity to maximize your learning, creativity, and success. Get ready to innovate!
 
 ## 📂 Instructions
@@ -21,24 +19,14 @@ Inside the `Case_[case_number]` folder, you will find the instructions and datas
 | [Case_3](<Case_3>)    | Silica Quality Prediction in Mining Process               |
 
 ## 📌 Rules and Guidelines
-### 🔀 Pull Requests
-
-1. **Branching:** 
-   - Create a new branch from the `main` branch for any changes or new features.
-   - Use a descriptive branch name, such as `hackathon/[your_team_name]`.
-
-2. **Commits:** 
-   - Keep commits small and meaningful.
-   - Each commit should focus on a single task or update.
-
-3. **Pull Request:** 
-   - Submit pull requests with a clear summary of what was changed or implemented.
-   - Reference any issues or milestones when relevant.
-
 ### ⚙️ Working in Azure Machine Learning
 1. **Setup:**
    - Confirm that you have access to an Azure Machine Learning workspace.
-   - Clone this repository to your local machine or directly into the Azure workspace.
+   - Clone this repository to your local machine or directly into the Azure workspace using the following command:
+     ```sh
+     git clone https://github.com/GitHub-Nawatech-Lab/[repo-name].git
+     ```
+     Replace [repo-name] with the repository name.
 
 2. **Environment:**
    - Create a Python environment and install all necessary packages.
@@ -70,14 +58,14 @@ Inside the `Case_[case_number]` folder, you will find the instructions and datas
 
 ### 🚀 Submitting to GitHub
 1. **Updates:**
-   - Regularly update your local branch with the latest changes from the main branch to avoid conflicts.
+   - Regularly update your repository with the latest changes.
 
 2. **Commits:**
    - Make meaningful commits with clear messages that describe the changes made.
 
 3. **Push:**
-   - Push your local branch to GitHub using the command:
+   - Push your changes to GitHub using the command:
 
    ```sh
-   git push origin hackathon/[your_team_name]
+   git push origin main
    ```
